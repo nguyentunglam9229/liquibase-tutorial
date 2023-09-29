@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  liquibase-tutorial-postgresql:
+    image: postgres:latest
+    # volumes:
+    #   - ~/volumes/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=liquibase
+      - POSTGRES_PASSWORD=123456aA@
+    ports:
+      - "5432:5432"
